@@ -4,7 +4,6 @@ import csv
 class Unit(Enum):
     G = "g"
     ML = "mL"
-    SINGLE = ()
 
 class FoodProduct:
     def __init__(self, food_type, product_name, price, quantity, unit):
