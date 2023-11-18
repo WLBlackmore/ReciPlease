@@ -23,8 +23,23 @@ const RecipeListForm = () => {
   };
 
   const handleIngredientChange = (index, event) => {
+    const { name, value } = event.target;
     const newIngredients = [...ingredients];
-    newIngredients[index][event.target.name] = event.target.value;
+    newIngredients[index][name] = value;
+
+    // Update unit placeholder if the ingredient matches one in DUMMYDATA
+    if (name === "ingredient") {
+      const matchedIngredient = DUMMYDATA.find(
+        (item) => item.ingredient === value
+      );
+      if (matchedIngredient) {
+        newIngredients[index].unit = matchedIngredient.unit;
+      } else {
+        // Reset the unit if the ingredient does not match
+        newIngredients[index].unit = "";
+      }
+    }
+
     setIngredients(newIngredients);
   };
 
@@ -56,11 +71,21 @@ const RecipeListForm = () => {
                 <input
                   type="text"
                   name="unit"
-                  placeholder="Unit"
+                  placeholder={
+                    ingredient.ingredient &&
+                    DUMMYDATA.find(
+                      (item) => item.ingredient === ingredient.ingredient
+                    )
+                      ? DUMMYDATA.find(
+                          (item) => item.ingredient === ingredient.ingredient
+                        ).unit
+                      : "Unit"
+                  }
                   value={ingredient.unit}
                   onChange={(event) => handleIngredientChange(index, event)}
                   required
                 />
+
                 {ingredients.length > 1 && (
                   <button
                     type="button"
