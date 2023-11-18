@@ -33,14 +33,6 @@ class RecipeHandler:
             matching_products = [product for product in self.products.values() if product.foodType == ingredient['name']]
 
             if matching_products:
-                # Find the product with the highest available quantity
-                max_available_product = max(matching_products, key=lambda p: p.quantity)
-                
-                if max_available_product.quantity >= ingredient['quantity']:
-                    print(f"{ingredient['name']} is available in sufficient quantity.")
-                else:
-                    print(f"Required quantity of {ingredient['name']} exceeds the highest available quantity. Multiple item purchase may be required.")
-
                 # Add the matching products to the results
                 results[ingredient['name']] = matching_products
             else:
@@ -95,7 +87,8 @@ class RecipeHandler:
         for product, quantity in self.groceryList.items():
             print(f"{product}: {quantity}")
 
-handler = RecipeHandler('ReciPlease\src\Grocery Items Dataset - Sheet1.csv')
+'''
+handler = RecipeHandler('ReciPlease/src/Grocery Items Dataset - Sheet1.csv')
 pb1 = FoodProduct("Peanut Butter", "big peebee", 3.99, 1000, Unit.G)
 pb2 = FoodProduct("Peanut Butter", "medium peebee", 1.99, 500, Unit.G)
 pb3 = FoodProduct("Peanut Butter", "wee peebee", 0.99, 250, Unit.G)
@@ -104,16 +97,27 @@ dummyList = [pb1, pb2, pb3]
 AmtNeeded = 2100
 toBuy = handler.optimizeCostForIngredient(dummyList, AmtNeeded)
 print(toBuy)
-
-'''Example use:
-recipe_handler = RecipeHandler('src/Grocery Items Dataset - Sheet1.csv')
-ingredients = [
-    {'name': 'Eggs', 'quantity': 200, 'unit': Unit.G},
-    {'name': 'Whole Milk', 'quantity': 500, 'unit': Unit.ML}
-]
-recipe_handler.check_ingredient_availability(ingredients)
 '''
 
+'''Example use:
+recipe_handler = RecipeHandler('flask-server/py/Grocery Items Dataset - Sheet1.csv')
+ingredients = [
+    {'name': 'Mixed Nuts', 'quantity': 200, 'unit': Unit.G},
+    {'name': 'Olive Oil', 'quantity': 500, 'unit': Unit.ML}
+]
+
+# Call the method and store the results
+results = recipe_handler.check_ingredient_availability(ingredients)
+
+# Display the results
+for ingredient_name, products in results.items():
+    print(f"\n{ingredient_name}:")
+    for product in products:
+        print(f"  Product Name: {product.productName}")
+        print(f"  Food Type: {product.foodType}")
+        print(f"  Price: {product.price}")
+        print(f"  Quantity: {product.quantity} {product.unit.value}")
+'''
 
 # recipe_handler = RecipeHandler('src/Grocery Items Dataset - Sheet1.csv')
 # ingredients = [
