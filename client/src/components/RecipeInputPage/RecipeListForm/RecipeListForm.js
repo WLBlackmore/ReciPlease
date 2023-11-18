@@ -64,6 +64,7 @@ const RecipeListForm = () => {
                   type="number"
                   name="quantity"
                   placeholder="Quantity"
+                  min={0}
                   value={ingredient.quantity}
                   onChange={(event) => handleIngredientChange(index, event)}
                   required
@@ -83,7 +84,7 @@ const RecipeListForm = () => {
                   }
                   value={ingredient.unit}
                   onChange={(event) => handleIngredientChange(index, event)}
-                  required
+                  readOnly
                 />
 
                 {ingredients.length > 1 && (
