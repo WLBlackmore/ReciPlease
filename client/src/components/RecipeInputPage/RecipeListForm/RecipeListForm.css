@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url('../../../../public/backgroundimage.png');
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.ingredient-field {
+    margin-bottom: 10px;
+}
+input[type="unit"],
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 22px); /* Adjusted width to account for padding and border */
+    padding: 12px 10px; /* Adjust padding */
+    margin: 4px 0; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for border color and shadow */
+}
+input[type="unit"]:hover,
+input[type="text"]:hover,
+input[type="number"]:hover {
+    border-color: #4CAF50; /* Change border color on hover */
+    box-shadow: 0 0 8px 0 rgba(76, 175, 80, 0.5); /* Add a glow effect */
+}
+.ingredient-field {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+}
+
+.ingredient-field input[type="number"],
+.ingredient-field input[type="text"] {
+    flex: 2; 
+    min-width: 120px; 
+}
+.ingredient-field input[type="unit"]{
+    flex: 1; 
+    min-width: 120px; 
+}
+
+.ingredient-field button {
+    white-space: nowrap;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Set font size to match other buttons */
+}
+
+
+input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+
+button {
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    transition-duration: 0.4s; 
+    cursor: pointer;
+    border-radius: 4px; 
+  }
+  
+  button:hover {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #4CAF50; 
+  }
+  
+  #add {
+    background-color: #008CBA; 
+  }
+  
+  #add:hover {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #008CBA; 
+  }
+  
+  #remove {
+    background-color: #f44336; 
+  }
+  
+  #remove:hover {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #f44336; 
+  }
+
+  
+  
+  
