@@ -6,33 +6,47 @@ from FoodProduct import FoodProduct, Unit
 class RecipeHandler:
     def __init__(self, csv_file):
         self.products = self.load_products(csv_file)
+        self.groceryList = {}  # Initialize the grocery list
 
+
+    #csv file reading, loads food products into a dictionary
     def load_products(self, csv_file):
-        products = defaultdict(list)
+        products = {}
         with open(csv_file, mode='r') as file:
             csv_reader = csv.DictReader(file)
             for row in csv_reader:
                 product = FoodProduct(
                     food_type=row['foodName'],
                     product_name=row['productName'],
-                    price=float(row['price'][1:]),
+                    price=float(row['price'][1:]),  # price starts with a currency symbol
                     quantity=float(row['quantity']),
                     unit=Unit(row['unit'])
                 )
-                products[product.foodType] = product
+                products.update({product.productName: product})
         return products
 
+    #Want to return a list of FoodTypes that share a common FoodName
     def check_ingredient_availability(self, ingredient_list):
+        results = {}
         for ingredient in ingredient_list:
-            product = self.products.get(ingredient['name'])
-            if product:
-                required_quantity = ingredient['quantity']
-                if product.quantity >= required_quantity:
+            # Find all products matching the foodName
+            matching_products = [product for product in self.products.values() if product.foodType == ingredient['name']]
+
+            if matching_products:
+                # Find the product with the highest available quantity
+                max_available_product = max(matching_products, key=lambda p: p.quantity)
+                
+                if max_available_product.quantity >= ingredient['quantity']:
                     print(f"{ingredient['name']} is available in sufficient quantity.")
                 else:
-                    print(f"{ingredient['name']} is not available in sufficient quantity.")
+                    print(f"Required quantity of {ingredient['name']} exceeds the highest available quantity. Multiple item purchase may be required.")
+
+                # Add the matching products to the results
+                results[ingredient['name']] = matching_products
             else:
                 print(f"{ingredient['name']} is not found.")
+
+        return results
 
    
     # Cost for SINGLE ingredient
@@ -68,6 +82,18 @@ class RecipeHandler:
         else:
             print(f"Product '{product_name}' not found.")
             return None
+        
+    def addToGroceryList(self, productName, required_quantity):
+        productName, amount_to_purchase = self.checkExcess(productName, required_quantity)
+        if productName in self.groceryList:
+            self.groceryList[productName] += amount_to_purchase
+        else:
+            self.groceryList[productName] = amount_to_purchase
+
+    def printGroceryList(self):
+        print("Grocery List:")
+        for product, quantity in self.groceryList.items():
+            print(f"{product}: {quantity}")
 
 handler = RecipeHandler('ReciPlease\src\Grocery Items Dataset - Sheet1.csv')
 pb1 = FoodProduct("Peanut Butter", "big peebee", 3.99, 1000, Unit.G)
