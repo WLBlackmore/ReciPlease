@@ -1,0 +1,256 @@
+foodName,unit
+Bell Pepper (Red),SINGLE
+Banana,SINGLE
+Whole Milk,mL
+Chicken Breast,g
+Mixed Nuts,g
+Apple (Green),SINGLE
+Orange Juice,mL
+Brown Rice,g
+Greek Yogurt,g
+Spaghetti Pasta,g
+Cherry Tomatoes,g
+Almond Milk,mL
+Avocado,SINGLE
+Salmon Fillet,g
+Maple Syrup,mL
+Quinoa,g
+Blueberries,g
+Eggs,SINGLE
+Olive Oil,mL
+Whole Wheat Bread,SINGLE
+Unsalted Butter,g
+Cheddar Cheese,g
+Strawberries,g
+Ground Coffee,g
+Green Tea,g
+Almonds,g
+Raspberries,g
+Kale,g
+Asparagus,g
+Garlic,SINGLE
+Onion,g
+Potatoes,g
+Red Grapes,g
+Watermelon,SINGLE
+Pineapple,SINGLE
+Kiwi,SINGLE
+Peaches,SINGLE
+Plums,SINGLE
+Pears,SINGLE
+Oranges,SINGLE
+Lemons,SINGLE
+Limes,SINGLE
+Cherries,g
+Blackberries,g
+Mangoes,SINGLE
+Papaya,SINGLE
+Coconut,SINGLE
+Avocado Oil,mL
+Canola Oil,mL
+Olive Oil,mL
+Whole Chicken,SINGLE
+Beef Steak,g
+Pork Chops,SINGLE
+Salmon,g
+Tilapia,g
+Shrimp,g
+Lobster,SINGLE
+Crab,SINGLE
+Scallops,g
+Mussels,g
+Trout,g
+Cod,g
+Halibut,g
+Sardines,g
+Tuna,g
+Salami,g
+Ham,g
+Turkey Breast,g
+Prosciutto,g
+Pepperoni,g
+Chorizo,g
+Bacon,g
+Sausage,g
+Ground Beef,g
+Ground Turkey,g
+Rye Bread,SINGLE
+Sourdough Bread,SINGLE
+Bagels,SINGLE
+Croissants,SINGLE
+Tortillas,SINGLE
+Pita Bread,SINGLE
+English Muffins,SINGLE
+Cheese Pizza,SINGLE
+Pepperoni Pizza,SINGLE
+Veggie Pizza,SINGLE
+Chicken Nuggets,g
+Fish Sticks,g
+French Fries,g
+Ice Cream,mL
+Yogurt,g
+Cheese,g
+Milk,mL
+Salted Butter,g
+Eggs,SINGLE
+Honey,mL
+Jam,g
+Peanut Butter,g
+Almond Butter,g
+Oats,g
+Cereal,g
+Artichoke,SINGLE
+Beets,g
+Brussels Sprouts,g
+Cauliflower,SINGLE
+Celery,SINGLE
+Corn,SINGLE
+Eggplant,SINGLE
+Green Beans,g
+Leeks,g
+Okra,g
+Peas,g
+Radishes,g
+Squash,SINGLE
+Zucchini,g
+Bok Choy,g
+Arugula,g
+Basil,g
+Cilantro,g
+Dill,g
+Mint,g
+Oregano,g
+Parsley,g
+Rosemary,g
+Sage,g
+Thyme,g
+Black Beans,g
+Chickpeas,g
+Kidney Beans,g
+Lentils,g
+Pinto Beans,g
+Rice,g
+Brown Rice,g
+Basmati Rice,g
+Jasmine Rice,g
+Quinoa,g
+Barley,g
+Bulgur,g
+Couscous,g
+Farro,g
+Millet,g
+Oatmeal,g
+Polenta,g
+Risotto Rice,g
+Sorghum,g
+Spelt,g
+Wild Rice,g
+Almond Milk,mL
+Coconut Milk,mL
+Oat Milk,mL
+Soy Milk,mL
+Apple Juice,mL
+Grape Juice,mL
+Orange Juice,mL
+Pineapple Juice,mL
+Tomato Juice,mL
+Beef Broth,mL
+Chicken Broth,mL
+Vegetable Broth,mL
+Coconut Water,mL
+Sparkling Water,mL
+Green Tea,mL
+Lemonade,mL
+Iced Tea,mL
+Sports Drink,mL
+Energy Drink,mL
+Cola,mL
+Ginger Ale,mL
+Root Beer,mL
+Soda Water,mL
+Tonic Water,mL
+Apple Cider Vinegar,mL
+Balsamic Vinegar,mL
+Red Wine Vinegar,mL
+Rice Vinegar,mL
+White Vinegar,mL
+Canola Oil,mL
+Corn Oil,mL
+Grapeseed Oil,mL
+Olive Oil,mL
+Peanut Oil,mL
+Sesame Oil,mL
+Sunflower Oil,mL
+Vegetable Oil,mL
+Walnut Oil,mL
+Almond Flour,g
+Coconut Flour,g
+Corn Flour,g
+Cornmeal,g
+Rice Flour,g
+Rye Flour,g
+Semolina Flour,g
+Whole Wheat Flour,g
+Baking Powder,g
+Baking Soda,g
+Cocoa Powder,g
+Cornstarch,g
+Vanilla Extract,mL
+Yeast,g
+Sugar,g
+Brown Sugar,g
+Powdered Sugar,g
+Honey,mL
+Maple Syrup,mL
+Agave Syrup,mL
+Molasses,mL
+Stevia,g
+Almond Butter,g
+Peanut Butter,g
+Cashew Butter,g
+Hazelnut Spread,g
+Apple Sauce,g
+Fruit Preserves,g
+Marmalade,g
+Chutney,g
+Salsa,g
+Ketchup,mL
+Mayonnaise,mL
+Mustard,mL
+BBQ Sauce,mL
+Hot Sauce,mL
+Soy Sauce,mL
+Teriyaki Sauce,mL
+Worcestershire Sauce,mL
+Fish Sauce,mL
+Hoisin Sauce,mL
+Sriracha,mL
+Chili Sauce,mL
+Tahini,g
+Pesto,g
+Alfredo Sauce,mL
+Marinara Sauce,mL
+Carbonara Sauce,mL
+Vodka Sauce,mL
+Bolognese Sauce,mL
+Arrabbiata Sauce,mL
+Bechamel Sauce,mL
+Red Curry Paste,g
+Green Curry Paste,g
+Yellow Curry Paste,g
+Garam Masala,g
+Cumin,g
+Coriander,g
+Turmeric,g
+Paprika,g
+Chili Powder,g
+Cayenne Pepper,g
+Black Pepper,g
+Sea Salt,g
+Himalayan Pink Salt,g
+Kosher Salt,g
+White Rice,g
+Brown Rice,g
+Basmati Rice,g
+Jasmine Rice,g
+Wild Rice,g

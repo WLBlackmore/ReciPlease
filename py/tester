@@ -1,0 +1,48 @@
+import unittest
+from io import StringIO
+import sys
+from RecipeHandling import RecipeHandler, Unit
+
+
+class TestRecipeHandler(unittest.TestCase):
+
+    def setUp(self):
+        # This method will run before every test
+        # Initialize RecipeHandler with a path to your test CSV file
+        self.recipe_handler = RecipeHandler('src/Grocery Items Dataset - Sheet1.csv')
+
+    def test_get_price_per_unit(self):
+        # Test the get_price_per_unit method
+        expected_price_per_unit = 3.99 / 600  # Replace with expected value for the test product
+        actual_price_per_unit = self.recipe_handler.getPricePerUnit('Bell Pepper (Red)')
+        print(f"Testing price per unit for 'Bell Pepper (Red)': Expected = {expected_price_per_unit}, Actual = {actual_price_per_unit}")
+        self.assertEqual(actual_price_per_unit, expected_price_per_unit, "Price per unit does not match expected value")
+
+    def test_check_ingredient_availability(self):
+        # Capture the print statements
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Test the check_ingredient_availability method
+        ingredients = [
+            {'name': 'Bell Pepper (Red)', 'quantity': 700},
+            {'name': 'Banana', 'quantity': 200},
+            {'name': 'Nonexistent Item', 'quantity': 100}
+        ]
+        self.recipe_handler.check_ingredient_availability(ingredients)
+
+        # Restore standard output
+        sys.stdout = sys.__stdout__
+
+        # Define expected output
+        expected_output = "Bell Pepper (Red) is not available in sufficient quantity.\n" + \
+                          "Banana is available in sufficient quantity.\n" + \
+                          "Nonexistent Item is not found.\n"
+
+        # Check if actual output matches expected output
+        self.assertEqual(captured_output.getvalue(), expected_output, "Ingredient availability check output is incorrect")
+
+    # Add more test methods as needed
+
+if __name__ == '__main__':
+    unittest.main()

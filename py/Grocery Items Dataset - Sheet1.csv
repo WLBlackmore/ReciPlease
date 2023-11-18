@@ -1,0 +1,261 @@
+id,foodName,productName,price,quantity,unit
+1,Bell Pepper (Red),4-Pack High Quality Red Bell Pepper,$3.99,600,g
+2,Banana,5-Pack Fresh Bananas,$2.50,500,g
+3,Whole Milk,1L Organic Whole Milk,$2.99,1000,mL
+4,Chicken Breast,500g Chicken Breast Fillets,$5.99,500,g
+5,Mixed Nuts,200g Mixed Nuts Pack,$4.50,200,g
+6,Apple (Green),6-Pack Crisp Green Apples,$3.50,900,g
+7,Orange Juice,2L Freshly Squeezed Orange Juice,$4.99,2000,mL
+8,Arborio Rice,1kg Organic Brown Rice,$3.75,1000,g
+9,Greek Yogurt,500g Greek Yogurt,$3.99,500,g
+10,Spaghetti Pasta,500g Spaghetti Pasta,$1.99,500,g
+11,Cherry Tomatoes,250g Cherry Tomatoes,$2.99,250,g
+12,Almond Milk,500mL Almond Milk,$1.99,500,mL
+13,Avocado,3-Pack Fresh Avocados,$4.00,600,g
+14,Salmon Fillet,300g Fresh Salmon Fillet,$7.99,300,g
+15,Maple Syrup,250mL Pure Maple Syrup,$5.50,250,mL
+16,Quinoa,1kg Organic Quinoa,$4.99,1000,g
+17,Blueberries,150g Fresh Blueberries,$3.50,150,g
+18,Eggs,12-Pack Free Range Eggs,$3.99,720,g
+19,Olive Oil,1L Extra Virgin Olive Oil,$10.99,1000,mL
+20,Whole Wheat Bread,1 Loaf Whole Wheat Bread,$2.50,500,g
+21,Unsalted Butter,250g Unsalted Butter,$2.99,250,g
+22,Cheddar Cheese,200g Aged Cheddar Cheese,$4.50,200,g
+23,Strawberries,250g Fresh Strawberries,$3.99,250,g
+24,Ground Coffee,250g Ground Coffee Beans,$5.99,250,g
+25,Green Tea,100g Green Tea Leaves,$4.99,100,g
+26,Almonds,200g Roasted Almonds,$5.99,200,g
+27,Raspberries,150g Fresh Raspberries,$4.50,150,g
+28,Kale,200g Organic Kale,$2.99,200,g
+29,Asparagus,250g Fresh Asparagus,$3.99,250,g
+30,Garlic,3-Pack Fresh Garlic,$1.50,150,g
+31,Onion,1kg Yellow Onions,$2.50,1000,g
+32,Potatoes,2kg Russet Potatoes,$3.99,2000,g
+33,Red Grapes,500g Red Seedless Grapes,$4.99,500,g
+34,Watermelon,1 Whole Watermelon,$5.99,5000,g
+35,Pineapple,1 Whole Pineapple,$3.99,1200,g
+36,Kiwi,5-Pack Fresh Kiwi,$3.50,500,g
+37,Peaches,4-Pack Fresh Peaches,$4.00,600,g
+38,Plums,6-Pack Fresh Plums,$4.50,600,g
+39,Pears,5-Pack Fresh Pears,$3.99,1000,g
+40,Oranges,6-Pack Fresh Oranges,$4.99,1200,g
+41,Lemons,4-Pack Fresh Lemons,$2.99,400,g
+42,Limes,6-Pack Fresh Limes,$2.50,600,g
+43,Cherries,250g Fresh Cherries,$5.99,250,g
+44,Blackberries,150g Fresh Blackberries,$4.99,150,g
+45,Mangoes,2-Pack Fresh Mangoes,$3.99,800,g
+46,Papaya,1 Whole Papaya,$3.50,1000,g
+47,Coconut,1 Whole Coconut,$2.99,1000,g
+48,Avocado Oil,500mL Avocado Oil,$7.99,500,mL
+49,Canola Oil,500 mL Canola Oil,$2.99,500,mL
+50,Olive Oil,750mL Extra Virgin Olive Oil,$9.99,750,mL
+51,Whole Chicken,1 Whole Chicken,$7.99,1500,g
+52,Beef Steak,500g Beef Steak,$11.99,500,g
+53,Pork Chops,4-Pack Pork Chops,$9.99,1000,g
+54,Salmon,300g Fresh Salmon,$8.99,300,g
+55,Tilapia,400g Tilapia Fillets,$6.99,400,g
+56,Shrimp,250g Fresh Shrimp,$5.99,250,g
+57,Lobster,1 Whole Lobster,$15.99,700,g
+58,Crab,2 Whole Crabs,$12.99,800,g
+59,Scallops,200g Fresh Scallops,$10.99,200,g
+60,Mussels,500g Fresh Mussels,$4.99,500,g
+61,Trout,300g Fresh Trout,$7.99,300,g
+62,Cod,400g Cod Fillets,$6.99,400,g
+63,Halibut,350g Halibut Fillets,$12.99,350,g
+64,Sardines,150g Canned Sardines,$2.99,150,g
+65,Tuna,200g Canned Tuna,$3.50,200,g
+66,Salami,250g Sliced Salami,$5.99,250,g
+67,Ham,300g Sliced Ham,$4.99,300,g
+68,Turkey Breast,500g Turkey Breast,$6.99,500,g
+69,Prosciutto,200g Prosciutto,$8.99,200,g
+70,Pepperoni,150g Sliced Pepperoni,$4.50,150,g
+71,Chorizo,250g Chorizo,$5.50,250,g
+72,Bacon,300g Smoked Bacon,$5.99,300,g
+73,Sausage,400g Pork Sausage,$4.99,400,g
+74,Ground Beef,500g Ground Beef,$5.99,500,g
+75,Ground Turkey,500g Ground Turkey,$4.99,500,g
+76,Rye Bread,1 Loaf Rye Bread,$2.99,500,g
+77,Sourdough Bread,1 Loaf Sourdough Bread,$3.50,500,g
+78,Bagels,6-Pack Bagels,$4.50,600,g
+79,Croissants,4-Pack Croissants,$5.99,400,g
+80,Tortillas,10-Pack Flour Tortillas,$3.99,500,g
+81,Pita Bread,6-Pack Pita Bread,$2.99,480,g
+82,English Muffins,6-Pack English Muffins,$3.99,600,g
+83,Cheese Pizza,1 Frozen Cheese Pizza,$5.99,400,g
+84,Pepperoni Pizza,1 Frozen Pepperoni Pizza,$6.99,450,g
+85,Veggie Pizza,1 Frozen Veggie Pizza,$6.99,450,g
+86,Chicken Nuggets,500g Frozen Chicken Nuggets,$5.99,500,g
+87,Fish Sticks,400g Frozen Fish Sticks,$4.99,400,g
+88,French Fries,1kg Frozen French Fries,$3.50,1000,g
+89,Ice Cream,1L Vanilla Ice Cream,$4.99,1000,mL
+90,Yogurt,500g Plain Yogurt,$3.50,500,g
+91,Cheese,200g Swiss Cheese,$4.99,200,g
+92,Milk,1L Skim Milk,$2.99,1000,mL
+93,Salted Butter,100g Salted Butter,$2.99,100,g
+94,Eggs,18-Pack Free Range Eggs,$4.99,1080,g
+95,Honey,250mL Organic Honey,$6.99,250,mL
+96,Jam,300g Strawberry Jam,$3.99,300,g
+97,Peanut Butter,500g Peanut Butter,$4.50,500,g
+98,Almond Butter,250g Almond Butter,$7.99,250,g
+99,Oats,1kg Rolled Oats,$3.99,1000,g
+100,Cereal,500g Breakfast Cereal,$4.99,500,g
+101,Artichoke,3-Pack Fresh Artichokes,$4.99,600,g
+102,Beets,500g Fresh Beets,$2.50,500,g
+103,Brussels Sprouts,400g Brussels Sprouts,$3.99,400,g
+104,Cauliflower,1 Whole Cauliflower,$3.50,600,g
+105,Celery,1 Bunch of Celery,$2.99,400,g
+106,Corn,4-Pack Fresh Corn,$3.99,800,g
+107,Eggplant,2-Pack Fresh Eggplant,$4.50,800,g
+108,Green Beans,300g Fresh Green Beans,$2.99,300,g
+109,Leeks,250g Fresh Leeks,$2.50,250,g
+110,Okra,200g Fresh Okra,$3.50,200,g
+111,Peas,300g Fresh Peas,$2.99,300,g
+112,Radishes,200g Fresh Radishes,$1.99,200,g
+113,Squash,1 Whole Squash,$3.99,1000,g
+114,Zucchini,500g Fresh Zucchini,$2.99,500,g
+115,Bok Choy,300g Bok Choy,$2.50,300,g
+116,Arugula,150g Fresh Arugula,$2.99,150,g
+117,Basil,100g Fresh Basil,$2.50,100,g
+118,Cilantro,50g Fresh Cilantro,$1.50,50,g
+119,Dill,50g Fresh Dill,$1.50,50,g
+120,Mint,50g Fresh Mint,$1.50,50,g
+121,Oregano,50g Fresh Oregano,$1.99,50,g
+122,Parsley,50g Fresh Parsley,$1.50,50,g
+123,Rosemary,50g Fresh Rosemary,$1.99,50,g
+124,Sage,50g Fresh Sage,$1.99,50,g
+125,Thyme,50g Fresh Thyme,$1.99,50,g
+126,Black Beans,500g Dried Black Beans,$2.99,500,g
+127,Chickpeas,500g Dried Chickpeas,$2.99,500,g
+128,Kidney Beans,500g Dried Kidney Beans,$2.99,500,g
+129,Lentils,500g Dried Lentils,$2.99,500,g
+130,Pinto Beans,500g Dried Pinto Beans,$2.99,500,g
+131,Rice,1kg White Rice,$3.99,1000,g
+132,Brown Rice,1kg Brown Rice,$4.50,1000,g
+133,Basmati Rice,1kg Basmati Rice,$5.99,1000,g
+134,Jasmine Rice,1kg Jasmine Rice,$5.50,1000,g
+135,Quinoa,500g Quinoa,$3.99,500,g
+136,Barley,500g Barley,$2.50,500,g
+137,Bulgur,500g Bulgur,$3.50,500,g
+138,Couscous,500g Couscous,$3.99,500,g
+139,Farro,500g Farro,$4.99,500,g
+140,Millet,500g Millet,$3.50,500,g
+141,Oatmeal,500g Oatmeal,$2.99,500,g
+142,Polenta,500g Polenta,$3.99,500,g
+143,Risotto Rice,500g Risotto Rice,$4.50,500,g
+144,Sorghum,500g Sorghum,$3.99,500,g
+145,Spelt,500g Spelt,$4.99,500,g
+146,Wild Rice,500g Wild Rice,$5.99,500,g
+147,Almond Milk,1L Almond Milk,$3.29,1000,mL
+148,Coconut Milk,1L Coconut Milk,$3.50,1000,mL
+149,Oat Milk,1L Oat Milk,$3.99,1000,mL
+150,Soy Milk,1L Soy Milk,$2.99,1000,mL
+151,Apple Juice,1L Apple Juice,$3.99,1000,mL
+152,Grape Juice,1L Grape Juice,$4.50,1000,mL
+153,Orange Juice,1L Orange Juice,$3.50,1000,mL
+154,Pineapple Juice,1L Pineapple Juice,$3.99,1000,mL
+155,Tomato Juice,1L Tomato Juice,$2.99,1000,mL
+156,Beef Broth,1L Beef Broth,$2.50,1000,mL
+157,Chicken Broth,1L Chicken Broth,$2.50,1000,mL
+158,Vegetable Broth,1L Vegetable Broth,$2.50,1000,mL
+159,Coconut Water,1L Coconut Water,$4.99,1000,mL
+160,Sparkling Water,1L Sparkling Water,$1.99,1000,mL
+161,Green Tea,1L Bottled Green Tea,$2.99,1000,mL
+162,Lemonade,1L Lemonade,$3.50,1000,mL
+163,Iced Tea,1L Iced Tea,$2.99,1000,mL
+164,Sports Drink,500mL Sports Drink,$1.99,500,mL
+165,Energy Drink,500mL Energy Drink,$2.50,500,mL
+166,Cola,2L Cola,$1.99,2000,mL
+167,Ginger Ale,2L Ginger Ale,$1.99,2000,mL
+168,Root Beer,2L Root Beer,$1.99,2000,mL
+169,Soda Water,1L Soda Water,$1.50,1000,mL
+170,Tonic Water,1L Tonic Water,$1.99,1000,mL
+171,Apple Cider Vinegar,500mL Apple Cider Vinegar,$3.99,500,mL
+172,Balsamic Vinegar,250mL Balsamic Vinegar,$5.99,250,mL
+173,Red Wine Vinegar,500mL Red Wine Vinegar,$3.50,500,mL
+174,Rice Vinegar,500mL Rice Vinegar,$2.99,500,mL
+175,White Vinegar,1L White Vinegar,$1.99,1000,mL
+176,Canola Oil,1L Canola Oil,$3.99,1000,mL
+177,Corn Oil,1L Corn Oil,$3.50,1000,mL
+178,Grapeseed Oil,500mL Grapeseed Oil,$5.99,500,mL
+179,Olive Oil,500mL Olive Oil,$6.99,500,mL
+180,Peanut Oil,1L Peanut Oil,$4.50,1000,mL
+181,Sesame Oil,250mL Sesame Oil,$6.99,250,mL
+182,Sunflower Oil,1L Sunflower Oil,$3.99,1000,mL
+183,Vegetable Oil,1L Vegetable Oil,$2.99,1000,mL
+184,Walnut Oil,250mL Walnut Oil,$7.99,250,mL
+185,Almond Flour,500g Almond Flour,$7.99,500,g
+186,Coconut Flour,500g Coconut Flour,$4.99,500,g
+187,Corn Flour,500g Corn Flour,$2.50,500,g
+188,Cornmeal,500g Cornmeal,$2.99,500,g
+189,Rice Flour,500g Rice Flour,$3.50,500,g
+190,Rye Flour,500g Rye Flour,$3.99,500,g
+191,Semolina Flour,500g Semolina Flour,$3.50,500,g
+192,Whole Wheat Flour,500g Whole Wheat Flour,$2.99,500,g
+193,Baking Powder,200g Baking Powder,$2.50,200,g
+194,Baking Soda,200g Baking Soda,$1.99,200,g
+195,Cocoa Powder,250g Cocoa Powder,$4.50,250,g
+196,Cornstarch,250g Cornstarch,$2.99,250,g
+197,Vanilla Extract,100mL Vanilla Extract,$7.99,100,mL
+198,Yeast,100g Active Dry Yeast,$2.99,100,g
+199,Sugar,1kg Granulated Sugar,$3.99,1000,g
+200,Brown Sugar,500g Brown Sugar,$2.99,500,g
+201,Powdered Sugar,500g Powdered Sugar,$3.50,500,g
+202,Honey,500mL Organic Honey,$9.99,500,mL
+203,Maple Syrup,500mL Pure Maple Syrup,$10.99,500,mL
+204,Agave Syrup,250mL Agave Syrup,$5.99,250,mL
+205,Molasses,250mL Molasses,$4.50,250,mL
+206,Stevia,100g Stevia Sweetener,$6.99,100,g
+207,Almond Butter,500g Almond Butter,$9.99,500,g
+208,Peanut Butter,1kg Peanut Butter,$6.99,1000,g
+209,Cashew Butter,250g Cashew Butter,$7.99,250,g
+210,Hazelnut Spread,400g Hazelnut Spread,$5.99,400,g
+211,Apple Sauce,500g Apple Sauce,$3.99,500,g
+212,Fruit Preserves,300g Mixed Fruit Preserves,$4.50,300,g
+213,Marmalade,300g Orange Marmalade,$4.99,300,g
+214,Chutney,250g Mango Chutney,$5.50,250,g
+215,Salsa,500g Salsa,$4.99,500,g
+216,Ketchup,500mL Ketchup,$2.99,500,mL
+217,Mayonnaise,500mL Mayonnaise,$3.99,500,mL
+218,Mustard,250mL Mustard,$2.50,250,mL
+219,BBQ Sauce,500mL BBQ Sauce,$4.99,500,mL
+220,Hot Sauce,250mL Hot Sauce,$3.99,250,mL
+221,Soy Sauce,500mL Soy Sauce,$2.99,500,mL
+222,Teriyaki Sauce,500mL Teriyaki Sauce,$4.50,500,mL
+223,Worcestershire Sauce,250mL Worcestershire Sauce,$3.50,250,mL
+224,Fish Sauce,250mL Fish Sauce,$3.99,250,mL
+225,Hoisin Sauce,250mL Hoisin Sauce,$3.99,250,mL
+226,Sriracha,500mL Sriracha,$4.99,500,mL
+227,Chili Sauce,500mL Chili Sauce,$3.99,500,mL
+228,Tahini,250g Tahini,$5.99,250,g
+229,Pesto,200g Basil Pesto,$4.99,200,g
+230,Alfredo Sauce,500mL Alfredo Sauce,$5.50,500,mL
+231,Marinara Sauce,500mL Marinara Sauce,$4.50,500,mL
+232,Carbonara Sauce,500mL Carbonara Sauce,$5.99,500,mL
+233,Vodka Sauce,500mL Vodka Sauce,$5.99,500,mL
+234,Bolognese Sauce,500mL Bolognese Sauce,$6.50,500,mL
+235,Arrabbiata Sauce,500mL Arrabbiata Sauce,$4.99,500,mL
+236,Bechamel Sauce,500mL Bechamel Sauce,$5.50,500,mL
+237,Red Curry Paste,200g Red Curry Paste,$4.50,200,g
+238,Green Curry Paste,200g Green Curry Paste,$4.50,200,g
+239,Yellow Curry Paste,200g Yellow Curry Paste,$4.50,200,g
+240,Garam Masala,100g Garam Masala,$3.99,100,g
+241,Cumin,100g Ground Cumin,$2.99,100,g
+242,Coriander,100g Ground Coriander,$2.99,100,g
+243,Turmeric,100g Ground Turmeric,$3.50,100,g
+244,Paprika,100g Paprika,$2.50,100,g
+245,Chili Powder,100g Chili Powder,$2.99,100,g
+246,Cayenne Pepper,100g Cayenne Pepper,$3.99,100,g
+247,Black Pepper,100g Ground Black Pepper,$3.50,100,g
+248,Sea Salt,500g Sea Salt,$2.99,500,g
+249,Himalayan Pink Salt,500g Himalayan Pink Salt,$4.99,500,g
+250,Kosher Salt,500g Kosher Salt,$3.50,500,g
+251,White Rice,2kg White Rice,$7.50,2000,g
+252,Brown Rice,2kg Brown Rice,$8.99,2000,g
+253,Basmati Rice,2kg Basmati Rice,$11.99,2000,g
+254,Jasmine Rice,2kg Jasmine Rice,$10.99,2000,g
+255,Wild Rice,1kg Wild Rice,$11.99,1000,g
+256,White Bread,1 Loaf White Bread,$6.49,750,g
+257,Italian Sausage,6 Italian Sausages,$11.99,600,g
+258,Parmesan Cheese,1 Block,$8.99,250,g
+259,White Flour,1kg White Flour,$5.00,1000,g
+260,Spaghetti,500g Spaghetti,3.99,500,g
