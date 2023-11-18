@@ -1,24 +1,24 @@
 foodName,unit
-Bell Pepper (Red),SINGLE
-Banana,SINGLE
+Bell Pepper (Red),g
+Banana,g
 Whole Milk,mL
 Chicken Breast,g
 Mixed Nuts,g
-Apple (Green),SINGLE
+Apple (Green),g
 Orange Juice,mL
-Brown Rice,g
+Arborio Rice,g
 Greek Yogurt,g
 Spaghetti Pasta,g
 Cherry Tomatoes,g
 Almond Milk,mL
-Avocado,SINGLE
+Avocado,g
 Salmon Fillet,g
 Maple Syrup,mL
 Quinoa,g
 Blueberries,g
-Eggs,SINGLE
+Eggs,g
 Olive Oil,mL
-Whole Wheat Bread,SINGLE
+Whole Wheat Bread,g
 Unsalted Butter,g
 Cheddar Cheese,g
 Strawberries,g
@@ -28,35 +28,35 @@ Almonds,g
 Raspberries,g
 Kale,g
 Asparagus,g
-Garlic,SINGLE
+Garlic,g
 Onion,g
 Potatoes,g
 Red Grapes,g
-Watermelon,SINGLE
-Pineapple,SINGLE
-Kiwi,SINGLE
-Peaches,SINGLE
-Plums,SINGLE
-Pears,SINGLE
-Oranges,SINGLE
-Lemons,SINGLE
-Limes,SINGLE
+Watermelon,g
+Pineapple,g
+Kiwi,g
+Peaches,g
+Plums,g
+Pears,g
+Oranges,g
+Lemons,g
+Limes,g
 Cherries,g
 Blackberries,g
-Mangoes,SINGLE
-Papaya,SINGLE
-Coconut,SINGLE
+Mangoes,g
+Papaya,g
+Coconut,g
 Avocado Oil,mL
 Canola Oil,mL
 Olive Oil,mL
-Whole Chicken,SINGLE
+Whole Chicken,g
 Beef Steak,g
-Pork Chops,SINGLE
+Pork Chops,g
 Salmon,g
 Tilapia,g
 Shrimp,g
-Lobster,SINGLE
-Crab,SINGLE
+Lobster,g
+Crab,g
 Scallops,g
 Mussels,g
 Trout,g
@@ -74,16 +74,16 @@ Bacon,g
 Sausage,g
 Ground Beef,g
 Ground Turkey,g
-Rye Bread,SINGLE
-Sourdough Bread,SINGLE
-Bagels,SINGLE
-Croissants,SINGLE
-Tortillas,SINGLE
-Pita Bread,SINGLE
-English Muffins,SINGLE
-Cheese Pizza,SINGLE
-Pepperoni Pizza,SINGLE
-Veggie Pizza,SINGLE
+Rye Bread,g
+Sourdough Bread,g
+Bagels,g
+Croissants,g
+Tortillas,g
+Pita Bread,g
+English Muffins,g
+Cheese Pizza,g
+Pepperoni Pizza,g
+Veggie Pizza,g
 Chicken Nuggets,g
 Fish Sticks,g
 French Fries,g
@@ -92,26 +92,26 @@ Yogurt,g
 Cheese,g
 Milk,mL
 Salted Butter,g
-Eggs,SINGLE
+Eggs,g
 Honey,mL
 Jam,g
 Peanut Butter,g
 Almond Butter,g
 Oats,g
 Cereal,g
-Artichoke,SINGLE
+Artichoke,g
 Beets,g
 Brussels Sprouts,g
-Cauliflower,SINGLE
-Celery,SINGLE
-Corn,SINGLE
-Eggplant,SINGLE
+Cauliflower,g
+Celery,g
+Corn,g
+Eggplant,g
 Green Beans,g
 Leeks,g
 Okra,g
 Peas,g
 Radishes,g
-Squash,SINGLE
+Squash,g
 Zucchini,g
 Bok Choy,g
 Arugula,g
@@ -254,3 +254,8 @@ Brown Rice,g
 Basmati Rice,g
 Jasmine Rice,g
 Wild Rice,g
+White Bread,g
+Italian Sausage,g
+Parmesan Cheese,g
+White Flour,g
+Spaghetti,g
