@@ -9,6 +9,11 @@ const RecipeListForm = (props) => {
     { ingredient: "", quantity: 0, unit: "" },
   ]);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    props.onIntSubmit(ingredients);
+  };
+
   const getIngredientStyle = (ingredientName) => {
     const isMatched = originalData.some(item => item.ingredient === ingredientName);
     return {
@@ -45,13 +50,14 @@ const RecipeListForm = (props) => {
     }
 
     setIngredients(newIngredients);
+    console.log(ingredients);
   };
 
   return (
     <body>
       <div className="container">
         <h2>Ingredient List</h2>
-        <form id="ingredientForm">
+        <form id="ingredientForm" onSubmit={handleSubmit}>
           <div id="ingredientFields">
             {ingredients.map((ingredient, index) => (
               <div className="ingredient-field" key={index}>

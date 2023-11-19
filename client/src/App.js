@@ -56,9 +56,13 @@ function App() {
   //   </div>
   // );
 
+  const postIngredients = (ingredients) =>{
+    console.log(ingredients)
+  }
+
   return (
     <>
-      <RecipeInputPage ingredientData={data}/>
+      <RecipeInputPage ingredientData={data} onFinalSubmit={postIngredients}/>
     </>
   )
 }
