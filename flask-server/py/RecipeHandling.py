@@ -26,42 +26,33 @@ class RecipeHandler:
         return products
 
     #Want to return a list of FoodTypes that share a common FoodName
-    def check_ingredient_availability(self, ingredient_list):
-        results = {}
-        for ingredient in ingredient_list:
-            # Find all products matching the foodName
-            matching_products = [product for product in self.products.values() if product.foodType == ingredient['name']]
-
-            if matching_products:
-                # Add the matching products to the results
-                results[ingredient['name']] = matching_products
-            else:
-                print(f"{ingredient['name']} is not found.")
-
-        return results
+    def getAllOfType(self, foodType):
+        return [product for product in self.products.values() if product.foodType == foodType]
+        
 
    
     # Cost for SINGLE ingredient
     def optimizeCostForIngredient(self, foodType, desiredAmount):
         # Get products in descending order
-        
+        foodTypeArr = sorted(self.getAllOfType(foodType), key=lambda x: x.quantity, reverse=True)
+
         total = 0
         toBuy = []
 
-        for i in range(len(dummyList)):
+        for i in range(len(foodTypeArr)):
             counter = 0
-            while (total + dummyList[i].quantity <= desiredAmount):
+            while (total + foodTypeArr[i].quantity <= desiredAmount):
                 counter += 1
-                total += dummyList[i].quantity
+                total += foodTypeArr[i].quantity
 
             if counter > 0:
-                toBuy.append((dummyList[i].productName, counter))
+                toBuy.append((foodTypeArr[i].productName, counter))
 
             if (total >= desiredAmount): break
         
         if total < desiredAmount:
-            smallest_item = dummyList[-1]
-            additional_units =  -(- (desiredAmount - total) // smallest_item.quantity)
+            smallest_item = foodTypeArr[-1]
+            additional_units =  int(-(- (desiredAmount - total) // smallest_item.quantity))
             toBuy.append((smallest_item.productName, additional_units))
         
         return toBuy      
@@ -87,17 +78,13 @@ class RecipeHandler:
         for product, quantity in self.groceryList.items():
             print(f"{product}: {quantity}")
 
-'''
-handler = RecipeHandler('ReciPlease/src/Grocery Items Dataset - Sheet1.csv')
-pb1 = FoodProduct("Peanut Butter", "big peebee", 3.99, 1000, Unit.G)
-pb2 = FoodProduct("Peanut Butter", "medium peebee", 1.99, 500, Unit.G)
-pb3 = FoodProduct("Peanut Butter", "wee peebee", 0.99, 250, Unit.G)
+
+handler = RecipeHandler('ReciPlease/flask-server/py/Grocery Items Dataset - Sheet1.csv')
+print(handler.optimizeCostForIngredient("Eggs", 3500))
+
     
-dummyList = [pb1, pb2, pb3]
-AmtNeeded = 2100
-toBuy = handler.optimizeCostForIngredient(dummyList, AmtNeeded)
-print(toBuy)
-'''
+
+
 
 '''Example use:
 recipe_handler = RecipeHandler('flask-server/py/Grocery Items Dataset - Sheet1.csv')
