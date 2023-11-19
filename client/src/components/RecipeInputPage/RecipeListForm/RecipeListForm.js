@@ -1,22 +1,16 @@
 import React, { useState } from "react";
 import "./RecipeListForm.css";
 
-const DUMMYDATA = [
-  { ingredient: "Beans", unit: "mL" },
-  { ingredient: "Rice", unit: "g" },
-  { ingredient: "Soup", unit: "mL" },
-];
 
 const RecipeListForm = (props) => {
   const originalData = props.ingredientData;
-  console.log(DUMMYDATA);
   console.log(originalData);
   const [ingredients, setIngredients] = useState([
     { ingredient: "", quantity: 0, unit: "" },
   ]);
 
   const getIngredientStyle = (ingredientName) => {
-    const isMatched = DUMMYDATA.some(item => item.ingredient === ingredientName);
+    const isMatched = originalData.some(item => item.ingredient === ingredientName);
     return {
       backgroundColor: isMatched ? '#d5fcd4' : 'white'
     };
@@ -37,9 +31,9 @@ const RecipeListForm = (props) => {
     const newIngredients = [...ingredients];
     newIngredients[index][name] = value;
 
-    // Update unit placeholder if the ingredient matches one in DUMMYDATA
+    // Update unit placeholder if the ingredient matches one in originalData
     if (name === "ingredient") {
-      const matchedIngredient = DUMMYDATA.find(
+      const matchedIngredient = originalData.find(
         (item) => item.ingredient === value
       );
       if (matchedIngredient) {
@@ -85,10 +79,10 @@ const RecipeListForm = (props) => {
                   name="unit"
                   placeholder={
                     ingredient.ingredient &&
-                    DUMMYDATA.find(
+                    originalData.find(
                       (item) => item.ingredient === ingredient.ingredient
                     )
-                      ? DUMMYDATA.find(
+                      ? originalData.find(
                           (item) => item.ingredient === ingredient.ingredient
                         ).unit
                       : "Unit"
@@ -118,7 +112,7 @@ const RecipeListForm = (props) => {
       </div>
 
       <datalist id="ingredient-choice">
-        {DUMMYDATA.map((item) => (
+        {originalData.map((item) => (
           <option key={item.ingredient} value={item.ingredient}></option>
         ))}
       </datalist>

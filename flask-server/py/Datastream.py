@@ -11,7 +11,7 @@ def generateTypeUnitFromCSV(csvFile):
     return result
 
 def convertToDict(arr):
-    listOfDicts = [{'Type': tuple[0], 'Unit': tuple[1]} for tuple in arr]
+    listOfDicts = [{'ingredient': tuple[0], 'unit': tuple[1]} for tuple in arr]
     return listOfDicts
 
 def convertJSONString(dict):
@@ -21,5 +21,5 @@ def convertJSONString(dict):
 def getJSONStringFromTypeUnit(csvFile):
     dir_path = os.path.dirname(os.path.realpath(__file__))
     csv_file_path = os.path.join(dir_path, 'FoodTypes.csv')  # Update to your file's relative location
-    return convertJSONString(convertToDict(generateTypeUnitFromCSV(csv_file_path)))
+    return convertToDict(generateTypeUnitFromCSV(csv_file_path))
     
