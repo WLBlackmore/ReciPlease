@@ -59,33 +59,47 @@ function App() {
   // );
 
   const postIngredients = async (ingredients) => {
-    // Log the ingredients to the console (for debugging purposes)
     console.log(ingredients);
-  
+    
     try {
-      // Make a POST request to the Flask backend
-      const response = await fetch('http://localhost:5000/submit-form', {
+      // Make a POST request to submit ingredients
+      const postResponse = await fetch('http://localhost:5000/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ingredients }), // Make sure to send the ingredients as a JSON string
+        body: JSON.stringify({ ingredients }),
       });
-  
-      // Throw error if response is not okay
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+    
+      if (!postResponse.ok) {
+        throw new Error(`HTTP error! status: ${postResponse.status}`);
       }
   
-      // You can add logic here to handle the response if needed
       console.log('Ingredients submitted successfully');
+    
+      // After successful POST, fetch the generated list
+      const listResponse = await fetch('http://localhost:5000/generate-list');
+    
+      if (!listResponse.ok) {
+        throw new Error(`HTTP error! status: ${listResponse.status}`);
+      }
+      
+      // Assuming the response is a JSON object
+      const generatedList = await listResponse.json();
+      
+      // Here you can set the state with the generated list
+      // For example:
+      // setGeneratedList(generatedList);
   
+      console.log('Generated list fetched successfully');
+    
     } catch (error) {
-      // Handle errors if the request fails
-      console.error('Error submitting ingredients:', error);
+      console.error('Error:', error);
     }
+  
     setPage(1);
   };
+  
   
   if (page===0){
     return(

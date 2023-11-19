@@ -28,7 +28,7 @@ def convertGroceryListToDict(arr):
 
 @app.route('/generate-list')
 def generate():
-    pass
+    return jsonify('test')
 
 
 @app.route('/test')
