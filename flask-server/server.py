@@ -10,8 +10,12 @@ print("Starting the server...")
 app = Flask(__name__)
 CORS(app)
 
+# In-memory storage for the form submission result
+submission_result = {}
+
 @app.route('/submit-form', methods=['POST'])
 def handleFormSubmission():
+    global submission_result
     data = (request.json)
     ingredients_data = data['ingredients']
     processed_data = [(item['ingredient'], item['quantity']) for item in ingredients_data]
@@ -20,6 +24,7 @@ def handleFormSubmission():
     handler = RecipeHandler(csv_file_path)
     products = handler.getMinimumProductsForRecipe(processed_data)
     dicto = convertGroceryListToDict(products)
+    submission_result = dicto
     return jsonify(dicto)
 
 def convertGroceryListToDict(arr):
@@ -28,7 +33,7 @@ def convertGroceryListToDict(arr):
 
 @app.route('/generate-list')
 def generate():
-    return jsonify('test')
+    return jsonify(submission_result)
 
 
 @app.route('/test')

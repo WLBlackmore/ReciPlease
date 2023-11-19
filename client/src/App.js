@@ -92,6 +92,7 @@ function App() {
       // setGeneratedList(generatedList);
   
       console.log('Generated list fetched successfully');
+      console.log(generatedList)
     
     } catch (error) {
       console.error('Error:', error);
