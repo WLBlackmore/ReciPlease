@@ -4,7 +4,7 @@ import './GroceryOutputPage.css'; // Assuming you have a CSS file with the style
 const GroceryOutputPage = (props) => {
    return (
     <body>
-    <div class="container">
+    <div className="container">
         <h2>My Shopping List</h2>
         <table>
             <thead>
