@@ -7,7 +7,10 @@ const DUMMYDATA = [
   { ingredient: "Soup", unit: "mL" },
 ];
 
-const RecipeListForm = () => {
+const RecipeListForm = (props) => {
+  const originalData = props.ingredientData;
+  console.log(DUMMYDATA);
+  console.log(originalData);
   const [ingredients, setIngredients] = useState([
     { ingredient: "", quantity: 0, unit: "" },
   ]);

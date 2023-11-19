@@ -26,7 +26,6 @@ function App() {
 
         // Set the data in state
         setData(data);
-        console.log(data);
       } catch (error) { // Make sure to catch the error object
         setError(error);
       } finally {
@@ -59,7 +58,7 @@ function App() {
 
   return (
     <>
-      <RecipeInputPage/>
+      <RecipeInputPage ingredientData={data}/>
     </>
   )
 }
