@@ -12,6 +12,13 @@ const RecipeListForm = () => {
     { ingredient: "", quantity: 0, unit: "" },
   ]);
 
+  const getIngredientStyle = (ingredientName) => {
+    const isMatched = DUMMYDATA.some(item => item.ingredient === ingredientName);
+    return {
+      backgroundColor: isMatched ? '#d5fcd4' : 'white'
+    };
+  };
+
   const addIngredientHandler = () => {
     setIngredients([...ingredients, { ingredient: "", quantity: 0, unit: "" }]);
   };
@@ -58,6 +65,7 @@ const RecipeListForm = () => {
                   value={ingredient.ingredient}
                   list="ingredient-choice"
                   onChange={(event) => handleIngredientChange(index, event)}
+                  style={getIngredientStyle(ingredient.ingredient)}
                   required
                 />
                 <input
