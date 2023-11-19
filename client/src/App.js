@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import RecipeInputPage from './components/RecipeInputPage/RecipeInputPage';
+import GroceryOutputPage from './components/GroceryOutputPage/GroceryOutputPage';
 
 function App() {
   // Managing States
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [page, setPage] = useState(0);
 
   // Fetching Data
   useEffect(() => {
@@ -82,14 +84,20 @@ function App() {
       // Handle errors if the request fails
       console.error('Error submitting ingredients:', error);
     }
+    setPage(1);
   };
   
-
-  return (
-    <>
+  if (page===0){
+    return(
       <RecipeInputPage ingredientData={data} onFinalSubmit={postIngredients}/>
-    </>
-  )
+    )
+  }
+ 
+  if (page===1){
+    return (
+      <GroceryOutputPage/>
+    )
+  }
 }
 
 export default App;
