@@ -19,7 +19,12 @@ def handleFormSubmission():
     csv_file_path = os.path.join(dir_path, 'py\\Grocery Items Dataset - Sheet1.csv')  # Update to your file's relative location
     handler = RecipeHandler(csv_file_path)
     products = handler.getMinimumProductsForRecipe(processed_data)
-    return jsonify({'status': 'success', 'message': 'Form data received'})
+    dicto = convertGroceryListToDict(products)
+    return jsonify(dicto)
+
+def convertGroceryListToDict(arr):
+    listOfDicts = [{'product': tuple[0], 'number': tuple[1], 'price': tuple[2]} for tuple in arr]
+    return listOfDicts
 
 @app.route('/generate-list')
 def generate():
