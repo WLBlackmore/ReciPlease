@@ -19,9 +19,12 @@ def handleFormSubmission():
     csv_file_path = os.path.join(dir_path, 'py\\Grocery Items Dataset - Sheet1.csv')  # Update to your file's relative location
     handler = RecipeHandler(csv_file_path)
     products = handler.getMinimumProductsForRecipe(processed_data)
-    print(products)
     return jsonify({'status': 'success', 'message': 'Form data received'})
-    
+
+@app.route('/generate-list')
+def generate():
+    pass
+
 
 @app.route('/test')
 def test():
