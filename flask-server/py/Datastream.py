@@ -1,5 +1,6 @@
 import csv
 import json
+import os
 
 def generateTypeUnitFromCSV(csvFile):
     result = []
@@ -18,5 +19,7 @@ def convertJSONString(dict):
     return json_string
 
 def getJSONStringFromTypeUnit(csvFile):
-    return convertJSONString(convertToDict(generateTypeUnitFromCSV(csvFile)))
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    csv_file_path = os.path.join(dir_path, 'FoodTypes.csv')  # Update to your file's relative location
+    return convertJSONString(convertToDict(generateTypeUnitFromCSV(csv_file_path)))
     

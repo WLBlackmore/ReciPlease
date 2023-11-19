@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, jsonify, request
 from flask_cors import CORS
-import Datastream.py
-
+# Ensure that the following import works:
+from py.Datastream import getJSONStringFromTypeUnit 
 
 print("Starting the server...")
 
@@ -16,10 +16,16 @@ def handleFormSubmission():
 
 @app.route('/test')
 def test():
-    return {'ingredients': ["banana", "apple", "orange"]}
+    try:
+        # Make sure this function returns a Python dict or list, not a JSON string.
+        data = getJSONStringFromTypeUnit("flask-server/py/FoodTypes.csv")
+        return jsonify(data)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        # Return a proper error message if something goes wrong.
+        return jsonify({'status': 'error', 'message': str(e)}), 500
 
 if __name__ == "__main__":
     print("Running in __main__")
+    # Remove debug=True for production.
     app.run(debug=True)
-
-print("Completed server.py")
