@@ -75,11 +75,23 @@ class RecipeHandler:
             for prod in prods:
                 products.append(prod)
 
+        return self.appendPrices(products)
+    
+    def appendPrices(self, products):
+        for i in range(len(products)):
+            product_name, quantity = products[i]
+            product = self.products.get(product_name)
+
+            if product:
+                total_price = product.price * quantity
+                products[i] = (product_name, quantity, total_price)
+            else:
+                print(f"Product '{product_name}' not found.")
         return products
+
     
     def getPriceOfProductList(self, products):
         return sum(prod.price for prod in products)
-
         
 
     def getPricePerUnit(self, product_name):
