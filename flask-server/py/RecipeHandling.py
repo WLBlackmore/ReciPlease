@@ -32,7 +32,7 @@ class RecipeHandler:
 
    
     # Cost for SINGLE ingredient
-    def optimizeCostForIngredient(self, foodType, desiredAmount):
+    def getMinimumProductsForIngredient(self, foodType, desiredAmount):
         # Get products in descending order
         foodTypeArr = sorted(self.getAllOfType(foodType), key=lambda x: x.quantity, reverse=True)
 
@@ -55,7 +55,20 @@ class RecipeHandler:
             additional_units =  int(-(- (desiredAmount - total) // smallest_item.quantity))
             toBuy.append((smallest_item.productName, additional_units))
         
-        return toBuy      
+        return toBuy   
+
+    def getMinimumProductsForRecipe(self, recipe):
+        products = []
+        for ingredient in recipe:
+            prods = self.getMinimumProductsForIngredient(self, ingredient.foodType, ingredient.quantity)
+            for prod in prods:
+                products.append(prod)
+
+        return products
+    
+    def getPriceOfProductList(self, products):
+        return sum(prod.price for prod in products)
+
         
 
     def getPricePerUnit(self, product_name):
