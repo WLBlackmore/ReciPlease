@@ -1,7 +1,9 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 # Ensure that the following import works:
-from py.Datastream import getJSONStringFromTypeUnit 
+from py.Datastream import getJSONStringFromTypeUnit
+from py.RecipeHandling import RecipeHandler
+import os
 
 print("Starting the server...")
 
@@ -10,9 +12,16 @@ CORS(app)
 
 @app.route('/submit-form', methods=['POST'])
 def handleFormSubmission():
-    data = request.json
-    print(data)
+    data = (request.json)
+    ingredients_data = data['ingredients']
+    processed_data = [(item['ingredient'], item['quantity']) for item in ingredients_data]
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    csv_file_path = os.path.join(dir_path, 'py\\Grocery Items Dataset - Sheet1.csv')  # Update to your file's relative location
+    handler = RecipeHandler(csv_file_path)
+    products = handler.getMinimumProductsForRecipe(processed_data)
+    print(products)
     return jsonify({'status': 'success', 'message': 'Form data received'})
+    
 
 @app.route('/test')
 def test():

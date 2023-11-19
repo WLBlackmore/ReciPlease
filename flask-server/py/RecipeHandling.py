@@ -1,7 +1,6 @@
 import csv
 from collections import defaultdict
-from FoodProduct import FoodProduct, Unit
-
+from py.FoodProduct import FoodProduct, Unit
 
 class RecipeHandler:
     def __init__(self, csv_file):
@@ -36,12 +35,24 @@ class RecipeHandler:
         # Get products in descending order
         foodTypeArr = sorted(self.getAllOfType(foodType), key=lambda x: x.quantity, reverse=True)
 
+        desiredAmount = int(desiredAmount)
         total = 0
         toBuy = []
 
+        if len(foodTypeArr) == 1:
+            counter = 0
+            while (total <= desiredAmount):
+                counter += 1
+                total += foodTypeArr[0].quantity
+
+            toBuy.append((foodTypeArr[0].productName, counter))
+
+            return toBuy
+
+
         for i in range(len(foodTypeArr)):
             counter = 0
-            while (total + foodTypeArr[i].quantity <= desiredAmount):
+            while total + foodTypeArr[i].quantity <= desiredAmount:
                 counter += 1
                 total += foodTypeArr[i].quantity
 
@@ -60,7 +71,7 @@ class RecipeHandler:
     def getMinimumProductsForRecipe(self, recipe):
         products = []
         for ingredient in recipe:
-            prods = self.getMinimumProductsForIngredient(self, ingredient.foodType, ingredient.quantity)
+            prods = self.getMinimumProductsForIngredient(ingredient[0], ingredient[1])
             for prod in prods:
                 products.append(prod)
 
@@ -92,8 +103,8 @@ class RecipeHandler:
             print(f"{product}: {quantity}")
 
 
-handler = RecipeHandler('ReciPlease/flask-server/py/Grocery Items Dataset - Sheet1.csv')
-print(handler.optimizeCostForIngredient("Eggs", 3500))
+#handler = RecipeHandler('ReciPlease/flask-server/py/Grocery Items Dataset - Sheet1.csv')
+#print(handler.optimizeCostForIngredient("Eggs", 3500))
 
     
 
