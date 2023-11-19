@@ -41,23 +41,6 @@ function App() {
     // Empty dependencies --> only runs once
   }, []);
 
-  // if (loading) {
-  //   return <h1>Loading...</h1>;
-  // }
-
-  // if (error) {
-  //   return <h1>Error: {error.message}</h1>;
-  // }
-
-  // return (
-  //   <div>
-  //     <ul>
-  //       {data.ingredients && data.ingredients.map((ingredient, index) => (
-  //         <li key={index}>{ingredient}</li>
-  //       ))}
-  //     </ul>
-  //   </div>
-  // );
 
   const postIngredients = async (ingredients) => {
     console.log(ingredients);
@@ -89,9 +72,7 @@ function App() {
       const generatedList = await listResponse.json();
       
       // Here you can set the state with the generated list
-      // For example:
-      // setGeneratedList(generatedList);
-  
+      
       console.log('Generated list fetched successfully');
       console.log(generatedList);
       setProcessedData(generatedList);
