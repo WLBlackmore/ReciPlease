@@ -56,9 +56,34 @@ function App() {
   //   </div>
   // );
 
-  const postIngredients = (ingredients) =>{
-    console.log(ingredients)
-  }
+  const postIngredients = async (ingredients) => {
+    // Log the ingredients to the console (for debugging purposes)
+    console.log(ingredients);
+  
+    try {
+      // Make a POST request to the Flask backend
+      const response = await fetch('http://localhost:5000/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ingredients }), // Make sure to send the ingredients as a JSON string
+      });
+  
+      // Throw error if response is not okay
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+  
+      // You can add logic here to handle the response if needed
+      console.log('Ingredients submitted successfully');
+  
+    } catch (error) {
+      // Handle errors if the request fails
+      console.error('Error submitting ingredients:', error);
+    }
+  };
+  
 
   return (
     <>
