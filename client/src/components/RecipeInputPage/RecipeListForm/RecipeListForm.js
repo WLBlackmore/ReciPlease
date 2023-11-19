@@ -56,7 +56,7 @@ const RecipeListForm = (props) => {
   return (
     <body>
       <div className="container">
-        <h2>Ingredient List</h2>
+        <h2>Ingredient List <img src='../../../leafIcon.png' id="icon"/></h2>
         <form id="ingredientForm" onSubmit={handleSubmit}>
           <div id="ingredientFields">
             {ingredients.map((ingredient, index) => (
