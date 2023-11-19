@@ -8,6 +8,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [page, setPage] = useState(0);
+  const [processedData, setProcessedData] = useState([]);
 
   // Fetching Data
   useEffect(() => {
@@ -92,7 +93,8 @@ function App() {
       // setGeneratedList(generatedList);
   
       console.log('Generated list fetched successfully');
-      console.log(generatedList)
+      console.log(generatedList);
+      setProcessedData(generatedList);
     
     } catch (error) {
       console.error('Error:', error);
@@ -110,7 +112,7 @@ function App() {
  
   if (page===1){
     return (
-      <GroceryOutputPage/>
+      <GroceryOutputPage processedData={processedData}/>
     )
   }
 }

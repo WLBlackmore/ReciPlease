@@ -1,43 +1,56 @@
-import React, { useEffect } from 'react';
-import './GroceryOutputPage.css'; // Assuming you have a CSS file with the styles
+import React, { useState } from 'react';
+import './GroceryOutputPage.css'; 
 
 const GroceryOutputPage = (props) => {
-   return (
-    <body>
-    <div className="container">
-        <h2>My Shopping List</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Product Name</th>
-                    <th>Quality</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Product 1</td>
-                    <td>3</td>
-                    <td>$5.00</td>
-                </tr>
-                <tr>
-                    <td>Product 2</td>
-                    <td>2</td>
-                    <td>$7.50</td>
-                </tr>
-                <tr>
-                    <td>Product 3</td>
-                    <td>5</td>
-                    <td>$3.20</td>
-                </tr>
-                <tr>
-                <td colSpan="2" style={{ textAlign: 'right' }}><strong>Total:</strong></td>
-                    <td><strong>$[Total Price]</strong></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    </body>
+    const processedData = props.processedData;
+    // Initialize strikethrough state for each row
+    const [strikethroughs, setStrikethroughs] = useState(new Array(processedData.length).fill(false));
+
+    // Function to toggle strikethrough
+    const toggleStrikethrough = index => {
+        const newStrikethroughs = [...strikethroughs];
+        newStrikethroughs[index] = !newStrikethroughs[index];
+        setStrikethroughs(newStrikethroughs);
+    };
+
+    // Calculate the total price
+    const totalPrice = processedData.reduce(
+        (acc, item) => acc + item.number * item.price,
+        0
+    );
+
+    return (
+        <body>
+            <div className="container">
+                <h2>My Shopping List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {processedData.map((item, index) => (
+                            <tr 
+                                key={index} 
+                                onClick={() => toggleStrikethrough(index)}
+                                style={{ textDecoration: strikethroughs[index] ? 'line-through' : 'none' }}
+                            >
+                                <td>{item.product}</td>
+                                <td>{item.number}</td>
+                                <td>${item.price.toFixed(2)}</td>
+                            </tr>
+                        ))}
+                        <tr>
+                            <td colSpan="2" style={{ textAlign: 'right' }}><strong>Total:</strong></td>
+                            <td><strong>${totalPrice.toFixed(2)}</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
     );
 };
 
