@@ -47,7 +47,6 @@ Papaya,g
 Coconut,g
 Avocado Oil,mL
 Canola Oil,mL
-Olive Oil,mL
 Whole Chicken,g
 Beef Steak,g
 Pork Chops,g
@@ -91,7 +90,6 @@ Yogurt,g
 Cheese,g
 Milk,mL
 Salted Butter,g
-Eggs,g
 Honey,mL
 Jam,g
 Peanut Butter,g
@@ -132,7 +130,6 @@ Rice,g
 Brown Rice,g
 Basmati Rice,g
 Jasmine Rice,g
-Quinoa,g
 Barley,g
 Bulgur,g
 Couscous,g
@@ -144,13 +141,11 @@ Risotto Rice,g
 Sorghum,g
 Spelt,g
 Wild Rice,g
-Almond Milk,mL
 Coconut Milk,mL
 Oat Milk,mL
 Soy Milk,mL
 Apple Juice,mL
 Grape Juice,mL
-Orange Juice,mL
 Pineapple Juice,mL
 Tomato Juice,mL
 Beef Broth,mL
@@ -158,7 +153,6 @@ Chicken Broth,mL
 Vegetable Broth,mL
 Coconut Water,mL
 Sparkling Water,mL
-Green Tea,mL
 Lemonade,mL
 Iced Tea,mL
 Sports Drink,mL
@@ -173,10 +167,8 @@ Balsamic Vinegar,mL
 Red Wine Vinegar,mL
 Rice Vinegar,mL
 White Vinegar,mL
-Canola Oil,mL
 Corn Oil,mL
 Grapeseed Oil,mL
-Olive Oil,mL
 Peanut Oil,mL
 Sesame Oil,mL
 Sunflower Oil,mL
@@ -199,13 +191,9 @@ Yeast,g
 Sugar,g
 Brown Sugar,g
 Powdered Sugar,g
-Honey,mL
-Maple Syrup,mL
 Agave Syrup,mL
 Molasses,mL
 Stevia,g
-Almond Butter,g
-Peanut Butter,g
 Cashew Butter,g
 Hazelnut Spread,g
 Apple Sauce,g
@@ -249,10 +237,6 @@ Sea Salt,g
 Himalayan Pink Salt,g
 Kosher Salt,g
 White Rice,g
-Brown Rice,g
-Basmati Rice,g
-Jasmine Rice,g
-Wild Rice,g
 White Bread,g
 Italian Sausage,g
 Parmesan Cheese,g
